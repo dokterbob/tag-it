@@ -26,7 +26,7 @@
 			}
 		});
 
-		tag_input.bind("keyup", function(event){
+		tag_input.bind("keydown", function(event){
 			if (event.which == $.ui.keyCode.BACKSPACE) {
 				if (tag_input.val() == "") {
 					// When backspace is pressed, the last tag is deleted.
