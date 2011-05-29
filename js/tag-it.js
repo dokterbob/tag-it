@@ -37,6 +37,14 @@
 			else if (event.which == $.ui.keyCode.COMMA || event.which == $.ui.keyCode.SPACE || event.which == $.ui.keyCode.ENTER) {
 				event.preventDefault();
 
+				// Select the currently active item, if any - use the typed
+				// text otherwise
+				var autocomplete = $(this).data("autocomplete");
+				if (autocomplete.menu.active) {
+					autocomplete.menu.select();
+					return;
+				}
+
 				var typed = tag_input.val();
 				typed = typed.replace(/,+$/,"");
 				typed = typed.trim();
