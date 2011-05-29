@@ -34,7 +34,7 @@
 				}
 			}
 			// Comma/Space/Enter are all valid delimiters for new tags.
-			else if (event.which == $.ui.keyCode.COMMA || event.which == $.ui.keyCode.SPACE || event.which == $.ui.keyCode.ENTER) {
+			else if (event.which == $.ui.keyCode.COMMA || event.which == $.ui.keyCode.ENTER) {
 				event.preventDefault();
 
 				// Select the currently active item, if any - use the typed
