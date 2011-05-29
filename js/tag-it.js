@@ -57,7 +57,9 @@
 		});
 
 		tag_input.autocomplete({
+			autoFocus: options.autoFocus,
 			source: options.availableTags, 
+			minLength: options.minLength,
 			select: function(event,ui){
 				if (is_new (ui.item.value)) {
 					create_choice (ui.item.value);
