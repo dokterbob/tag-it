@@ -86,7 +86,6 @@
 			el += "</li>\n";
 			var li_search_tags = this.tag_input.parent();
 			$(el).insertBefore (li_search_tags);
-			this.tag_input.val("");
 		}
 	};
 
